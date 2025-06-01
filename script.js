@@ -1,10 +1,7 @@
+// がんばりました
+
 window.addEventListener('DOMContentLoaded', function () {
   console.log('is correctly loaded');
-});
-
-let cursor;
-
-window.addEventListener('DOMContentLoaded', function () {
   cursor = document.getElementById('cursor');
   if (!cursor) {
     console.error('Cursor element not found!')
