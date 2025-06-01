@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .button {
   display: inline-block;
   width: 200px;
@@ -14,7 +38,8 @@
   border: 0.1px solid rgba(255, 255, 255, 0.384);
   box-shadow: 0 4px 6px rgba(40, 40, 40, 200);
   font-size: 60%;
-  transition: width 0.6s ease-out;;
+  transition: width 0.6s ease-out;
+  ;
 }
 
 .button:hover {
@@ -36,12 +61,15 @@ body {
   background-position: 20%;
   backdrop-filter: blur(3px);
   font-family: 'Montserrat', sans-serif;
-  /* フォントを適用 */;
+  /* フォントを適用 */
+  cursor: none;
+  ;
 }
 
 .main {
   text-align: right;
   /* テキストを中央揃え */
+  animation: fadeInRight 1s ease-in-out;
 }
 
 .bio {
@@ -53,6 +81,7 @@ body {
 .header {
   font-family: "montserrat", sans-serif;
   color: rgba(166, 202, 202, 0.795);
+  animation: fadeInTop 1s ease-in-out;
 }
 
 .footer {
@@ -64,3 +93,19 @@ body {
   padding: 10px;
 }
 
+#cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(174, 182, 209, 0.767);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+a, button, .button {
+  cursor: none; /* リンクやボタンでもカーソルを非表示にする */
+}
