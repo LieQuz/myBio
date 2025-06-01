@@ -2,17 +2,12 @@
 
 .button {
   display: inline-block;
-  /* ボタンをインラインブロックに */
   width: 200px;
   padding: 10px 0px;
   background-color: #5c5c5c0c;
-  /* 背景色を緑に */
   color: rgba(255, 255, 255, 0.76);
-  /* 文字色を白に */
   text-decoration: none;
-  /* 下線を消す */
   border-radius: 5px;
-  /* 角を丸くする */
   text-align: center;
   font-family: "Montserrat", sans-serif;
   backdrop-filter: blur(2px);
