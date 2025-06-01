@@ -106,6 +106,14 @@ body {
   z-index: 9999;
 }
 
-a, button, .button {
-  cursor: none; /* リンクやボタンでもカーソルを非表示にする */
+a,
+button,
+.button {
+  cursor: none;
+  /* リンクやボタンでもカーソルを非表示にする */
+}
+
+html,
+body {
+  overflow: hidden;
 }
