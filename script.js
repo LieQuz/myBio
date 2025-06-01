@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', function () {
       sizeWidth += (13 - sizeWidth) * 0.05;
       sizeHeight += (13 - sizeHeight) * 0.05;
 
-      cursor.style.backgroundColor = 'rgb(255, 255, 255)';
+      cursor.style.backgroundColor = 'rgba(255, 255, 255, 0.41)';
       cursor.style.width = sizeWidth + 'px';
       cursor.style.height = sizeHeight + 'px';
 
