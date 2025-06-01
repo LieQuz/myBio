@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.button {
+  display: inline-block;
+  /* ボタンをインラインブロックに */
+  width: 200px;
+  padding: 10px 0px;
+  background-color: #5c5c5c0c;
+  /* 背景色を緑に */
+  color: rgba(255, 255, 255, 0.76);
+  /* 文字色を白に */
+  text-decoration: none;
+  /* 下線を消す */
+  border-radius: 5px;
+  /* 角を丸くする */
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  backdrop-filter: blur(2px);
+  border: 0.1px solid rgba(255, 255, 255, 0.384);
+  box-shadow: 0 4px 6px rgba(40, 40, 40, 200);
+  font-size: 60%;
+  transition: width 0.6s ease-out;;
+}
+
+.button:hover {
+  width: 230px;
+}
+
+body {
+  display: flex;
+  /* Flexboxを有効化 */
+  justify-content: center;
+  /* 水平方向に中央揃え */
+  align-items: center;
+  /* 垂直方向に中央揃え */
+  height: 100vh;
+  /* ビューポート全体の高さを確保 */
+  margin: 0;
+  /* 余白をリセット */
+  background: url(https://images.unsplash.com/photo-1566342088293-38debd381c63?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmlnaHQlMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D);
+  background-position: 20%;
+  backdrop-filter: blur(3px);
+  font-family: 'Montserrat', sans-serif;
+  /* フォントを適用 */;
+}
+
+.main {
+  text-align: right;
+  /* テキストを中央揃え */
+}
+
+.bio {
+  margin-bottom: 35px;
+  font-family: "montserrat", sans-serif;
+  color: rgba(174, 182, 209, 0.767);
+}
+
+.header {
+  font-family: "montserrat", sans-serif;
+  color: rgba(166, 202, 202, 0.795);
+}
+
+.footer {
+  color: rgba(255, 255, 255, 0.76);
+  position: fixed;
+  bottom: 0;
+  font-size: 7px;
+  font-family: "montserrat", sans-serif;
+  padding: 10px;
+}
+
